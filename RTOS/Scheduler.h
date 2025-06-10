@@ -14,7 +14,7 @@ class Scheduler
         void                  setSchedulingPolicy(int policy);
 
     private:
-        std::vector<std::shared_ptr<Task>> taskQueue;
-        size_t                             roundRobinIndex = 0;
-        int                                currentPolicy = 0;
+        std::vector<std::shared_ptr<Task>> tasks;
+        int                                roundRobinIndex = -1;
+        int                                policy = 0;
 };

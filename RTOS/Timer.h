@@ -13,5 +13,5 @@ class Timer
         int  getTick() const;
 
     private:
-        int currentTick = 0;
+        int ticks = 0;
 };
