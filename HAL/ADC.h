@@ -3,5 +3,5 @@
 class ADC 
 {
     public:
-        int read(int channel);
+        int read(int channel) { return channel * 100; }
 };

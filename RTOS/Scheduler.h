@@ -11,7 +11,7 @@ class Scheduler
         std::shared_ptr<Task> getNextTask();
         void                  addTask(std::shared_ptr<Task> task);
         void                  removeFinished();
-        void                  setSchedulingPolicy(int policy);
+        void                  setSchedulingPolicy(int policy) { this->policy = policy; }
 
     private:
         std::vector<std::shared_ptr<Task>> tasks;

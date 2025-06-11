@@ -10,7 +10,7 @@ class Timer
     public:
         void advanceTicks();
         void updateTasks(std::vector<std::shared_ptr<Task>>& tasks);
-        int  getTick() const;
+        int  getTick() const { return ticks; }
 
     private:
         int ticks = 0;
