@@ -1,4 +1,4 @@
-# RTOS Simulator in C++
+# Simulated-Embedded-Device-Kernel
 
 ## Overview
 
